@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Alua Burkitbayeva</title>
+        <!--test-->
         <style>
             h1 {
                 text-align: center;
@@ -34,6 +35,7 @@
         .video-container {
             display: flex;
             justify-content: flex-start; 
+            flex-direction: column;
             padding-left: 30px; 
             padding-top: 20px; 
         }
@@ -41,6 +43,32 @@
             width: 700px; 
             max-width: 100%; 
         }
+        .button-group {
+                display: flex;
+                justify-content: space-between; /* Ensures equal spacing */
+                width: 700px; /* Set width to control spacing */
+                margin-top: 20px;
+            }
+            .circle-button {
+                background-color: #ce8a1d;
+                color: white;
+                width: 200px; /* Set the button width */
+                height: 200px; /* Set the button height */
+                border-radius: 50%;
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                margin-top: 20px;
+                justify-content: center;
+                align-items: center;
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            }
+            .circle-button:hover {
+                background-color: #dd97cc;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+            }
+
         .contact-me {
             position: fixed; 
             bottom: 40px; 
@@ -59,7 +87,7 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
         }
 
-        
+
         .contact-me a {
             color: white;
             text-decoration: none;
@@ -72,9 +100,14 @@
         <div class="video-container">
             <video src="https://drive.google.com/file/d/1WqNXl7tOyU_qqLbe4Cbylox7CJPzc2OC/view?usp=sharing
             " controls></video>
+            <div class="button-group">
+                <button class="circle-button">Button 1</button>
+                <button class="circle-button">Button 2</button>
+                <button class="circle-button">Button 3</button>
+            </div>
         </div>
         <div class="contact-me">
-            <a href="ab11177@nyu.edu">Contact Me</a>
+            <button onclick="window.location.href='mailto:ab11177@nyu.edu';">Contact Me</button>
         </div>
     
     </body>
