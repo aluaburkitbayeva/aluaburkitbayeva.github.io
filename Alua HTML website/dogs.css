@@ -40,22 +40,25 @@ body {
 
 /* Ensuring the images have the same size and some margin */
 .image-container img {
-    width: 30%; /* Adjusts the width of each image */
+    width: 95%; /* Adjusts the width of each image */
     height: auto;
     border-radius: 8px; /* Optional rounded corners */
 }
 .image-section {
+    display: inline-block;
     text-align: center;
     margin-bottom: 20px;
 }
-
 .image-section img {
     display: block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    margin: 0 auto;
 }
 
+
 .image-section p {
-    margin-top: 0;
+    width: auto;
+    max-width: 100%;
+    margin-top: 80px; /* Space between the image and the text */
+    font-size: 16px;
+    color: #333;
 }
