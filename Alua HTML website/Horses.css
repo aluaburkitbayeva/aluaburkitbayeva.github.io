@@ -1,21 +1,21 @@
 h1 {
     text-align: center;
-    color: rgb(253, 253, 253);
+    color: rgb(209, 168, 33);
     text-shadow: 2px 2px 5px rgb(132, 199, 185);
     letter-spacing: 5px;
     font-weight: bold; 
-    color: rgb(232, 232, 232);
-    background-color: rgb(193, 138, 225);
+    color: rgb(201, 197, 69);
+    background-color: rgb(114, 73, 23);
 padding: 10px;
 border-radius: 10px;
 transition: color 0.3s ease; 
 animation: blink 1s infinite;
 }
 h1:hover {
-    color: rgb(157, 57, 57);
+    color: rgb(106, 196, 187);
 }
 body {
-    background-image: url('https://images8.alphacoders.com/132/1323371.png'); 
+    background-image: url('https://www.bhmpics.com/downloads/beige-brown-aesthetic-wallpaper/14.37840a82643a2247ee13947eb94de09c.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -68,8 +68,8 @@ body {
     max-width: 100%;
     margin-top: 100px; /* Space between the image and the text */
     font-size: 25px;
-    color: #fdd246;
-    background-color: #bc82a7;
+    color: #c7b168;
+    background-color: #492718;
     word-wrap: break-word;
     padding: 5px;
     text-align: center;
