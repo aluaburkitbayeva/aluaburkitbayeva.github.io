@@ -1,21 +1,19 @@
 h1 {
     text-align: center;
-    color: rgb(209, 168, 33);
-    text-shadow: 2px 2px 5px rgb(132, 199, 185);
-    letter-spacing: 5px;
-    font-weight: bold; 
-    color: rgb(201, 197, 69);
-    background-color: rgb(114, 73, 23);
-padding: 10px;
-border-radius: 10px;
-transition: color 0.3s ease; 
-animation: blink 1s infinite;
+    color: #3c3c3c; /* Darker color for professionalism */
+    font-family: 'Montserrat', sans-serif; /* Use a more professional font */
+    padding: 20px;
+    border-bottom: 2px solid #ccc; /* Subtle underline */
+    margin: 20px 0; /* Adjust margin for spacing */
+    font-size: 2.5em; /* Keep the size */
+    letter-spacing: 1px; /* Reduce letter spacing */
+    transition: color 0.3s ease; 
 }
 h1:hover {
-    color: rgb(106, 196, 187);
+    color: rgb(191, 200, 200);
 }
 body {
-    background-image: url('https://www.bhmpics.com/downloads/beige-brown-aesthetic-wallpaper/14.37840a82643a2247ee13947eb94de09c.jpg'); 
+    background-image: linear-gradient(45deg, #8B4513, #D2B48C);; 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -44,14 +42,23 @@ body {
     height: 210px;
     object-fit: cover;
     border-radius: 8px; /* Optional rounded corners */
+    justify-content: space-between; /* Adds spacing between the images */
+    align-items: flex-start; /* Align items at the top */
 }
 .image-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     min-height: 450px;
+    justify-content: flex-start;
+    min-height: 450px;
+    border: 8px solid rgba(243, 242, 239, 0.8); /* Frame around the image section */
+    border-radius: 10px; /* Rounded corners for the frame */
+    padding: 20px; /* Padding inside the frame */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background to enhance visibility */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 .image-section img {
     width: 100%;
@@ -61,16 +68,28 @@ body {
     display: block;
     margin: 0 auto;
 }
+.image-section img {
+    transition: transform 0.3s ease-in-out;
+}
 
+.image-section img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
 
 .image-section p {
     width: auto;
     max-width: 100%;
-    margin-top: 100px; /* Space between the image and the text */
-    font-size: 25px;
-    color: #c7b168;
-    background-color: #492718;
-    word-wrap: break-word;
-    padding: 5px;
+    margin-top: 70px; /* Space between the image and the text */
+    font-size: 1.2em; /* Increase font size for better readability */
+    color: #551d11; /* Softer text color */
+    background-color: rgba(240, 194, 8, 0.8); /* Slight transparency */
+    border-radius: 5px; /* Rounded corners for text background */
+    padding: 10px;
     text-align: center;
+    line-height: 1.5; /* Increase line height for better readability */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+.image-section p:hover {
+    background-color: rgb(236, 236, 236); /* Change background on hover */
 }

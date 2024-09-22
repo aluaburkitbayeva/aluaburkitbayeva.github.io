@@ -6,161 +6,135 @@
         transform: translateX(0);
     }
 }
-.sidenav {
-    animation: slideIn 0.5s ease-out;
-    position: fixed; /* Sticks the nav bar in place */
-    top: 50%; /* Align it vertically in the center */
-    left: 0; /* Align it on the left */
-    transform: translateY(-50%);
-    background-color: #333; /* Dark background color */
-    padding: 15px;
-    border-radius: 0 10px 10px 0; /* Rounded right corners */
-    z-index: 1000; /* Ensure it's above other content */
-}
-.sidenav a {
-    display: block;
-    padding: 15px;
-    margin: 10px 0;
-    background-color: #555; /* Slightly lighter background for links */
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-.sidenav a:hover {
-    background-color: #dd97cc; /* Light purple */
-    color: #f5e79d; /* Yellow text on hover */
-}
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
 }
 h1 {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    font-size: 50px; /* Larger and more impactful font size */
-    color: #ffff;
-    background: #a1c3c5;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-    padding: 20px;
-    border-radius: 15px;
-    letter-spacing: 5px;
-    transition: color 0.3s ease;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Adding box shadow for depth */
-}
+    text-align: center; /* Center the heading text */
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    font-weight: 700; /* Bold font weight */
+    font-size: 48px; /* Adjust size */
+    color: #333; /* Darker text color for contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 20px 0; /* Space above and below */
+    margin: 0; /* Remove default margin */
+    letter-spacing: 2px; /* Slightly increase spacing */
+    transition: color 0.3s ease; /* Smooth transition for color change */
 
+}
+h1::before {
+    content: ''; /* Empty content for the decorative line */
+    display: block; /* Make the line a block element */
+    width: 50px; /* Width of the line */
+    height: 3px; /* Height of the line */
+    background-color: #d44c1a; /* Color of the line */
+    margin: 0 auto 10px; /* Center it and space below */
+}
 /* Hover Effect for Heading */
-h1:hover {
-    background-color: #dd97cc; /* Change background on hover */
-    color: #f5e79d;
-}
-
-/* Flicker Animation */
-@keyframes flicker {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        opacity: 1;
+    h1:hover {
+        color: #ff5e62; /* Change color on hover */
     }
-    20%, 24%, 55% {
-        opacity: 0.7;
-    }
-}
 body {
-background-image: url('https://img.freepik.com/free-vector/gradient-background-vector-spring-colors_53876-117271.jpg?t=st=1726721894~exp=1726725494~hmac=c9a3c3d527206027653875dda31e39827e70d6b2642fb3857854766d96829260&w=2000'); 
-background-size: cover; 
-background-repeat: no-repeat; 
-background-position: center; 
-height: 100vh; 
-margin: 0;
-font-family: Arial, sans-serif;
-color: white;
+background-image: linear-gradient(to bottom, #f0f0f0, #d9d9d9); /* Light gradient background */
+background-size: cover; /* Ensure the background covers the entire page */
+background-repeat: no-repeat; /* Prevent background repetition */
+background-position: center; /* Center the background image */
+height: 100vh; /* Full viewport height */
+margin: 0; /* Remove default margin */
+font-family: Arial, sans-serif; /* Font style for the body */
+color: white; /* Default text color */
+line-height: 1.6; /* Improved readability */
 
 }
 .content {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    height: 80vh;
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between content items */
+    padding: 20px; /* Padding around the content */
+    height: 80vh; /* Set the height of the content area */
     align-items: flex-start; /* Align items to top */
 }
 .video-container {
-display: flex;
-justify-content: flex-start; 
-flex-direction: column;
-padding-left: 30px; 
-padding-top: 20px; 
+display: flex; /* Flexbox for layout */
+justify-content: flex-start; /* Align items to the left */
+flex-direction: column; /* Stack items vertically */
+padding-left: 30px; /* Left padding */
+padding-top: 0px; /* No top padding */
 }
 video {
-width: 800px; 
-max-width: 100%; 
-border: 8px solid #d44c1a;
-border-radius: 15px;
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+width: 800px; /* Fixed width for video */
+max-width: 100%; /* Ensure video is responsive */
+border: 8px solid #d44c1a; /* Border around the video */
+border-radius: 15px; /* Rounded corners for the video */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+.video-frame {
+    border: 10px solid #d44c1a; /* Adjust color and thickness */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    overflow: hidden; /* Ensures the border radius applies to the iframe */
+    margin-bottom: 12px; /* Space below the video frame */
 }
 .button-group {
     display: flex;
     justify-content: space-between; /* Ensures equal spacing */
     width: 800px; /* Set width to control spacing */
-    margin-top: 20px;
+    margin-top: 5px; /* Space above the buttons */
 }
 .circle-button {
-    background: radial-gradient(circle, #ff9966, #ff5e62); 
-    color: white;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: radial-gradient(circle, #ff9966, #ff5e62); /* Gradient background */
+    color: white; /* White text */
+    width: 205px; /* Button width */
+    height: 205px; /* Button height */
+    border-radius: 50%; /* Make buttons circular */
+    font-size: 18px; /* Font size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Flexbox layout for centering text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth hover effect */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 .circle-button:hover {
     background: radial-gradient(circle, #ff5e62, #ff9966); /* Reverse gradient on hover */
     transform: scale(1.15); /* Button grows larger */
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Larger shadow for depth */
 }
-
-
-
 .right-button-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 20px; 
-    width: 500px;
-    padding: 20px;
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items at the top */
+    padding-top: 60px; /* Top padding */
+    width: 500px; /* Fixed width */
+    padding: 20px; /* Padding inside */
 }
 .side-button {
-    display: flex; /* Flexbox to center content */
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
+    display: flex; /* Flexbox layout for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     background: linear-gradient(to right, #fc466b, #3f5efb); /* Horizontal gradient */
-    color: white;
-    width: 100%;
-    height: 180px;
-    padding: 15px; /* Adjusted padding to ensure the text fits well */
-    border-radius: 10px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white; /* White text */
+    width: 100%; /* Full width */
+    height: 180px; /* Fixed height */
+    padding: 15px; /* Padding inside the button */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    line-height: 50px; /* Line height for text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    font-size: 30px; /* Large font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-bottom: 20px; /* Space below the button */
 }
 
 .side-button:hover {
         background: linear-gradient(to right, #3f5efb, #fc466b); /* Reverse gradient on hover */
         transform: translateY(-5px); /* Moves the button upwards slightly */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
 }
 .button-container {
     display: flex;
@@ -171,7 +145,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 .contact-me {
 position: fixed; 
 bottom: 80px; 
-right: 180px; 
+right: 130px; 
 background-color: #f39c12; 
 background-image: linear-gradient(45deg, #f39c12, #e74c3c);
 color: white;
@@ -204,7 +178,6 @@ transform: scale(1.1);
     font-size: 20px;
     font-weight: bold;
 }
-
 .ripple-button::after {
     content: '';
     position: absolute;
@@ -218,67 +191,15 @@ transform: scale(1.1);
     border-radius: 50%;
     opacity: 0;
 }
-
 .ripple-button:active::after {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     transition: 0s;
 }
-
 .contact-me a {
 color: white;
 text-decoration: none;
 display: flex;
 align-items: center;
 justify-content: center;
-}
-.upload-section {
-    display: block; /* Hidden by default */
-    padding: 20px;
-    margin-top: 20px;
-    background-color: rgba(116, 83, 83, 0.5);
-    border-radius: 10px;
-    text-align: center;
-}
-
-#uploadForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#file-upload {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #bc55b7;
-    border-radius: 5px;
-    border: none;
-}
-
-input[type="submit"] {
-    background-color: #e37a11;
-    color: white;
-    padding: 15px 30px;
-    font-size: 20px; 
-    font-weight: bold;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
-    text-transform: uppercase;
-}
-
-input[type="submit"]:hover {
-    background: linear-gradient(to right, #3f5efb, #fc466b); /* Reverse gradient */
-    transform: translateY(-3px); /* Lift the button slightly on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase the shadow */
-}
-/* File Label Styling */
-label[for="file-upload"] {
-    color: white;
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: bold;
 }

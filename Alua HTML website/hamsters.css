@@ -1,19 +1,20 @@
+
 h1 {
     text-align: center;
-    color: #e167c2; /* Darker color for professionalism */
+    color: #f1eff1; /* Darker color for professionalism */
     font-family: 'Montserrat', sans-serif; /* Use a more professional font */
     padding: 20px;
-    border-bottom: 2px solid #ed6ae4; /* Subtle underline */
+    border-bottom: 2px solid #ccc; /* Subtle underline */
     margin: 20px 0; /* Adjust margin for spacing */
     font-size: 2.5em; /* Keep the size */
     letter-spacing: 1px; /* Reduce letter spacing */
     transition: color 0.3s ease; 
 }
 h1:hover {
-    color: rgb(255, 118, 6);
+    color: rgb(71, 63, 63);
 }
 body {
-    background-image: linear-gradient(45deg, #FFDAB9, #FFE77A);; 
+    background-image: linear-gradient(45deg, #B0EACD, #00A4CCFF);; 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -45,18 +46,24 @@ body {
     justify-content: space-between; /* Adds spacing between the images */
     align-items: flex-start; /* Align items at the top */
 }
-
+.image-container img:hover {
+    transform: scale(1.1); /* Slight zoom-in effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .image-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     min-height: 450px;
-    border: 8px solid rgba(224, 49, 224, 0.8); /* Frame around the image section */
+    justify-content: flex-start;
+    min-height: 450px;
+    border: 8px solid rgba(243, 242, 239, 0.8); /* Frame around the image section */
     border-radius: 10px; /* Rounded corners for the frame */
     padding: 20px; /* Padding inside the frame */
-    background-color: rgba(119, 203, 236, 0.2); /* Light background to enhance visibility */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background to enhance visibility */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 .image-section img {
@@ -74,23 +81,20 @@ body {
 .image-section img:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
-
-
 .image-section p {
     width: auto;
     max-width: 100%;
     margin-top: 100px; /* Space between the image and the text */
     font-size: 1.2em;
-    color: #f3a909;
-    background-color: #b66195;
+    color: #5a6f9f;
+    background-color: #9ebc82;
     word-wrap: break-word;
     padding: 5px;
-    text-align: center;line-height: 1.5; /* Increase line height for better readability */
+    text-align: center;
+    line-height: 1.5; /* Increase line height for better readability */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     transition: background-color 0.3s ease; /* Smooth background transition */
 }
 .image-section p:hover {
-    background-color: rgb(250, 250, 248); /* Change background on hover */
+    background-color: rgb(236, 236, 236); /* Change background on hover */
 }
-
-
