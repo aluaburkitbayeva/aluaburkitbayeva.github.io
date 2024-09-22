@@ -2,63 +2,66 @@
 <html>
     <head>
         <title>Alua Burkitbayeva</title> <!-- Title of the webpage that is displayed in the browser tab -->
-        <link rel="stylesheet" href="index.css"> <!-- Link to the external CSS stylesheet -->
+        <link rel="stylesheet" href="index.css"> <!-- Link to the external CSS stylesheet for styling -->
         <!--test--> <!-- Placeholder comment for testing purposes -->
     </head>
     <body>
         <h1>Who Is Your Antistress?</h1> <!-- Main heading of the webpage -->
-        <div class="content"> <!-- Main content container -->
-            <div class="video-container"> <!-- Container for the video and buttons -->
-                <div class="video-frame"> <!-- Frame around the video -->
+        
+        <div class="content"> <!-- Main content container for the video and buttons -->
+            <div class="video-container"> <!-- Container that holds the video and button group -->
+                <div class="video-frame"> <!-- Frame for embedding the video -->
                     <iframe width="790" height="400" src="https://www.youtube.com/embed/ZZGDjMjMHOE" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe> <!-- Embedded main YouTube video about campus Cats -->
+                    allowfullscreen></iframe> <!-- Embedded YouTube video about NYUAD campus Cats -->
                 </div>
-                <div class="button-group"> <!-- Group for circular buttons -->
-                    <a href="Dogs.html" class="circle-button">Dogs</a> <!-- Button linking to the Dogs page -->
-                    <a href="Horses.html" class="circle-button">Horses</a> <!-- Button linking to the Horses page -->
-                    <a href="Hamsters.html" class="circle-button">Hamsters</a> <!-- Button linking to the Hamsters page -->
+
+                <div class="button-group"> <!-- Container for the circular buttons below the video -->
+                    <a href="Dogs.html" class="circle-button">Dogs</a> <!-- Circular button linking to the Dogs page -->
+                    <a href="Horses.html" class="circle-button">Horses</a> <!-- Circular button linking to the Horses page -->
+                    <a href="Hamsters.html" class="circle-button">Hamsters</a> <!-- Circular button linking to the Hamsters page -->
                 </div>
             </div>
-            <div class="right-button-group"> <!-- Group for the right-hand side button -->
-                <div class="button-container"> <!-- Container for the button -->
-                    <a href="https://www.instagram.com/campuscatsnyuad/" class="side-button">Learn more about NYUAD campus cats</a> <!-- Button linking to Instagram page -->
+
+            <div class="right-button-group"> <!-- Container for the button on the right side -->
+                <div class="button-container"> <!-- Button container -->
+                    <a href="https://www.instagram.com/campuscatsnyuad/" class="side-button">Learn more about NYUAD campus cats</a> <!-- Button linking to the Instagram page about campus cats -->
                 </div>
             </div>
         </div>
 
-        <div class="contact-me"> <!-- Container for the contact section -->
-            <a href="mailto: ab11177@nyu.edu">Contact Me</a> <!-- Email link for contact -->
-            <div id="timeDisplay"></div> <!-- Dynamic display for the current time -->
+        <div class="contact-me"> <!-- Container for the "Contact Me" section -->
+            <a href="mailto: ab11177@nyu.edu">Contact Me</a> <!-- Contact link that opens the email client with a pre-filled email address -->
+            <div id="timeDisplay"></div> <!-- Container for displaying the dynamic current time -->
 
-            <!-- Email input and button for validation -->
-            <input type="email" id="emailInput" placeholder="Enter your email"> <!-- Email input field -->
-            <button id="submitButton">Submit</button> <!-- Submit button for email validation -->
-            <p id="error-message" style="color:red;"></p> <!-- Error message display for invalid email -->
+            <!-- Email input and validation section -->
+            <input type="email" id="emailInput" placeholder="Enter your email"> <!-- Email input field for user to type in their email -->
+            <button id="submitButton">Submit</button> <!-- Submit button for email validation and submission -->
+            <p id="error-message" style="color:red;"></p> <!-- Error message displayed in case of invalid email input -->
 
             <script>
-                // Email Validation
+                // Email Validation Script
                 document.getElementById('submitButton').addEventListener('click', function(event) {
                     const emailInput = document.getElementById('emailInput').value; // Get the email input value
                     const errorMessage = document.getElementById('error-message'); // Reference to the error message element
-                    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; // Regular expression pattern for valid email
+                    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; // Regular expression pattern for a valid email format
 
-                    // Check if the email input matches the pattern
+                    // Check if the email input matches the email validation pattern
                     if (!emailInput.match(emailPattern)) {
-                        errorMessage.textContent = 'Please enter a valid email address, and then press "Contact Me"'; // Set error message
-                        event.preventDefault(); // Prevent form submission if invalid
+                        errorMessage.textContent = 'Please enter a valid email address'; // Set error message if email is invalid
+                        event.preventDefault(); // Prevent submission if email is invalid
                     } else {
-                        errorMessage.textContent = ''; // Clear error message if valid
-                        // Redirect to mailto link, opening the user's email client with ab11177@nyu.edu as the "to" email
+                        errorMessage.textContent = ''; // Clear the error message if email is valid
+                        // Redirect to the mailto link, which opens the user's email client with a pre-filled "to" email
                         window.location.href = `mailto:ab11177@nyu.edu?subject=Contact&body=My email is: ${emailInput}`;
                     }
                 });
 
-                // Dynamic Time Display
+                // Dynamic Time Display Script
                 function updateTime() {
                     const now = new Date(); // Get the current date and time
                     const timeString = now.toLocaleTimeString(); // Format time as a string
-                    document.getElementById('timeDisplay').textContent = `Current Time: ${timeString}`; // Display time
+                    document.getElementById('timeDisplay').textContent = `Current Time: ${timeString}`; // Display current time
                 }
                 setInterval(updateTime, 1000); // Update time every second
             </script>

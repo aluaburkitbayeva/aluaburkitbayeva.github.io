@@ -1,75 +1,81 @@
 h1 {
-    text-align: center;
+    text-align: center; /* Center-align the heading text */
     color: #3c3c3c; /* Darker color for professionalism */
     font-family: 'Montserrat', sans-serif; /* Use a more professional font */
-    padding: 20px;
-    border-bottom: 2px solid #ccc; /* Subtle underline */
-    margin: 20px 0; /* Adjust margin for spacing */
-    font-size: 2.5em; /* Keep the size */
-    letter-spacing: 1px; /* Reduce letter spacing */
-    transition: color 0.3s ease; 
+    padding: 20px; /* Add padding around the heading */
+    border-bottom: 2px solid #ccc; /* Subtle underline below the heading */
+    margin: 20px 0; /* Adjust margin for spacing above and below */
+    font-size: 2.5em; /* Set font size for the heading */
+    letter-spacing: 1px; /* Reduce letter spacing for readability */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 h1:hover {
-    color: rgb(191, 200, 200);
+    color: rgb(191, 200, 200); /* Change color on hover */
 }
+
 body {
-    background-image: linear-gradient(45deg, #8B4513, #D2B48C);; 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    height: 100vh; 
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
+    background-image: linear-gradient(45deg, #8B4513, #D2B48C); /* Gradient background for the body */
+    background-size: cover; /* Cover the entire body with the background */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set height to full viewport height */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set font family for the body text */
+    color: white; /* Set text color to white */
 }
+
 .content {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    height: 80vh;
-    align-items: flex-start; /* Align items to top */
+    display: flex; /* Use flexbox layout for the content */
+    justify-content: space-between; /* Space between child elements */
+    padding: 20px; /* Add padding around the content */
+    height: 80vh; /* Set height to 80% of viewport height */
+    align-items: flex-start; /* Align items to the top */
 }
+
 .image-container {
-    display: flex;
-    justify-content: space-between; /* Adds spacing between the images */
-    align-items: center; /* Vertically centers the images */
+    display: flex; /* Use flexbox layout for the image container */
+    justify-content: space-between; /* Add spacing between images */
+    align-items: center; /* Vertically center the images */
     padding: 40px; /* Optional padding around the images */
 }
 
 /* Ensuring the images have the same size and some margin */
 .image-container img {
-    width: 310px; /* Adjusts the width of each image */
-    height: 210px;
-    object-fit: cover;
-    border-radius: 8px; /* Optional rounded corners */
-    justify-content: space-between; /* Adds spacing between the images */
-    align-items: flex-start; /* Align items at the top */
+    width: 310px; /* Set the width of each image */
+    height: 210px; /* Set the height of each image */
+    object-fit: cover; /* Cover the image area while maintaining aspect ratio */
+    border-radius: 8px; /* Optional rounded corners for images */
+    justify-content: space-between; /* Add spacing between images (not needed for img) */
+    align-items: flex-start; /* Align items at the top (not needed for img) */
 }
+
 .image-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 350px;
-    margin-bottom: 0;
-    min-height: 450px;
-    justify-content: flex-start;
-    min-height: 450px;
+    display: flex; /* Use flexbox layout for the image section */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align items */
+    width: 350px; /* Set fixed width for each section */
+    margin-bottom: 0; /* Remove bottom margin */
+    min-height: 450px; /* Set minimum height for the section */
+    justify-content: flex-start; /* Align children to the top */
+    min-height: 450px; /* Duplicate minimum height (redundant) */
     border: 8px solid rgba(243, 242, 239, 0.8); /* Frame around the image section */
     border-radius: 10px; /* Rounded corners for the frame */
     padding: 20px; /* Padding inside the frame */
     background-color: rgba(255, 255, 255, 0.2); /* Light background to enhance visibility */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
+
 .image-section img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto;
+    width: 100%; /* Set image width to 100% of the container */
+    height: 250px; /* Set fixed height for images */
+    object-fit: cover; /* Cover the image area while maintaining aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    display: block; /* Display images as block elements */
+    margin: 0 auto; /* Center the image horizontally */
 }
+
 .image-section img {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for image transform */
 }
 
 .image-section img:hover {
@@ -77,19 +83,20 @@ body {
 }
 
 .image-section p {
-    width: auto;
-    max-width: 100%;
+    width: auto; /* Automatic width for paragraphs */
+    max-width: 100%; /* Prevent overflow of paragraphs */
     margin-top: 70px; /* Space between the image and the text */
     font-size: 1.2em; /* Increase font size for better readability */
     color: #551d11; /* Softer text color */
-    background-color: rgba(240, 194, 8, 0.8); /* Slight transparency */
+    background-color: rgba(240, 194, 8, 0.8); /* Background with slight transparency */
     border-radius: 5px; /* Rounded corners for text background */
-    padding: 10px;
-    text-align: center;
+    padding: 10px; /* Padding inside the paragraph */
+    text-align: center; /* Center-align the text */
     line-height: 1.5; /* Increase line height for better readability */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     transition: background-color 0.3s ease; /* Smooth background transition */
 }
+
 .image-section p:hover {
-    background-color: rgb(236, 236, 236); /* Change background on hover */
+    background-color: rgb(236, 236, 236); /* Change background color on hover */
 }
