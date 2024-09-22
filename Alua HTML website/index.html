@@ -45,10 +45,12 @@
 
                     // Check if the email input matches the pattern
                     if (!emailInput.match(emailPattern)) {
-                        errorMessage.textContent = 'Please enter a valid email address'; // Set error message
+                        errorMessage.textContent = 'Please enter a valid email address, and then press "Contact Me"'; // Set error message
                         event.preventDefault(); // Prevent form submission if invalid
                     } else {
                         errorMessage.textContent = ''; // Clear error message if valid
+                        // Redirect to mailto link, opening the user's email client with ab11177@nyu.edu as the "to" email
+                        window.location.href = `mailto:ab11177@nyu.edu?subject=Contact&body=My email is: ${emailInput}`;
                     }
                 });
 
