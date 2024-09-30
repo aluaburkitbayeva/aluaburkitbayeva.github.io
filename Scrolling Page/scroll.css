@@ -1,0 +1,88 @@
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* Extended height for the scroll */
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Added smooth scrolling */
+  }
+  
+  /* First Section: Parallax container */
+  .parallax-container {
+    position: relative;
+    height: 100vh; /* Full screen height for first section */
+    background: url('subway1.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Bird styling */
+  .bird {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0; /* Hidden initially */
+    transform: translateY(100px); /* Off screen */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  /* Each bird at different positions */
+  #bird1 {
+    left: 10%;
+    top: 30%;
+    background-image: url('Layer\ 1.png');
+  }
+  
+  #bird2 {
+    left: 45%;
+    top: 23%;
+    background-image: url('Layer\ 2.png');
+  }
+  
+  #bird3 {
+    left: 80%;
+    top: 80%;
+    background-image: url('Layer\ 3.png');
+  }
+  
+  #bird4 {
+    left: 15%;
+    top: 70%;
+    background-image: url('Layer\ 4.png');
+  }
+  
+  #bird5 {
+    left: 80%;
+    top: 40%;
+    background-image: url('Layer\ 7.png');
+  }
+  
+  /* Second Section: White background */
+  .second-section {
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  /* Text styling in second section */
+  #second-text {
+    font-size: 4rem;
+    color: black;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 1.5s ease-out;
+  }
+  
+  #second-subtext {
+    font-size: 1.5rem;
+    color: gray;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 2s ease-out;
+    margin-top: 20px;
+  }
+  
