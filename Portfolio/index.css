@@ -643,16 +643,20 @@ html {
   .project-detail .learn-more-btn {
     transition: all 1.5s ease;
   }
-/* Styles for desktop */
-@media screen and (min-width: 768px) {
-    /* Your desktop styles here */
-  }
+/* Responsive Design for Project Sections */
+@media screen and (max-width: 768px) {
+    .project-container {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center-align items */
+      gap: 20px; /* Add spacing between stacked elements */
+    }
   
-  /* Styles for mobile */
-  @media screen and (max-width: 767px) {
-    /* Your mobile styles here */
-  }
-  img {
-    max-width: 100%;
-    height: auto;
+    .project-text {
+      text-align: center; /* Center-align text for better readability */
+    }
+  
+    .project-evaluation {
+      width: 100%; /* Make evaluation section fill the width */
+      text-align: center;
+    }
   }
