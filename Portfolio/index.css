@@ -643,3 +643,37 @@ html {
   .project-detail .learn-more-btn {
     transition: all 1.5s ease;
   }
+  @media screen and (max-width: 768px) {
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .project-text {
+      order: 1;
+      width: 100%;
+    }
+  
+    .project-heading {
+      margin-bottom: 15px;
+    }
+  
+    .project-description {
+      margin-bottom: 20px;
+    }
+  
+    .project-evaluation {
+      order: 2;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .learn-more-btn {
+      order: 3;
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  }
