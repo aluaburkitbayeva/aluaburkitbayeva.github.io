@@ -1,4 +1,4 @@
-# aluaburkitbayeva.github.io
+aluaburkitbayeva.github.io
 Alua Burkitbayeva. Website Documentation.
 
 Project Name: Who Is Your Antistress?
