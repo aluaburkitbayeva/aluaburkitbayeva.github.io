@@ -139,3 +139,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const projectSections = document.querySelectorAll('.project-detail');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const projectTitle = entry.target.querySelector('.project-heading').textContent;
+        switch(projectTitle) {
+          case 'Who Is Your Antistress?':
+            entry.target.style.fontFamily = "'Comic Sans MS', cursive";
+            break;
+          case 'Chatney: First AI Student':
+            entry.target.style.fontFamily = "'Courier New', monospace";
+            break;
+          case 'The Final Print':
+            entry.target.style.fontFamily = "'Nosifer', cursive";
+            break;
+          case 'How To Pretend To Be A Responsible Student':
+            entry.target.style.fontFamily = "'Schoolbell', cursive";
+            break;
+        }
+      }
+    });
+  }, { threshold: 0.1 });
+
+  projectSections.forEach(section => observer.observe(section));
+});
