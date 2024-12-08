@@ -1060,3 +1060,30 @@ img {
        url('/fonts/CustomFont.woff') format('woff');
   font-display: swap;
 }
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('path-to-font/ComicSansMS.woff2') format('woff2'),
+       url('path-to-font/ComicSansMS.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Courier New';
+  src: url('path-to-font/CourierNew.woff2') format('woff2'),
+       url('path-to-font/CourierNew.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nosifer';
+  src: url('path-to-font/Nosifer.woff2') format('woff2'),
+       url('path-to-font/Nosifer.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Schoolbell';
+  src: url('path-to-font/Schoolbell.woff2') format('woff2'),
+       url('path-to-font/Schoolbell.woff') format('woff');
+  font-display: swap;
+}
