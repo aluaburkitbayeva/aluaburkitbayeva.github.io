@@ -738,8 +738,8 @@ html {
     gap: 5px;
   }
   .photo-container {
-    margin-bottom: 20px;
     margin: 0;
+    flex: 0 0 auto;
   }
   .text {
     padding: 0 15px; /* Add some horizontal padding */
