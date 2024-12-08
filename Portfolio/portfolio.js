@@ -121,3 +121,21 @@ leftArrow.addEventListener('click', moveToPrevSlide);
 
 // Initialize the first slide
 updateSlidePosition();
+document.addEventListener('DOMContentLoaded', function() {
+  const menuTrigger = document.querySelector('.menu-trigger');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuTrigger.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+    menuTrigger.classList.toggle('active');
+  });
+
+  // Close menu when a link is clicked
+  const navItems = document.querySelectorAll('.nav-links a');
+  navItems.forEach(item => {
+    item.addEventListener('click', function() {
+      navLinks.classList.remove('active');
+      menuTrigger.classList.remove('active');
+    });
+  });
+});

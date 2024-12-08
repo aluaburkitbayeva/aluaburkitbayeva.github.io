@@ -606,14 +606,37 @@ main {
       align-items: center;
     }
     .nav-links {
+      display: none;
       flex-direction: column;
-      gap: 10px;
-      margin-top: 20px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px 0;
+    }
+    .nav-links.active {
+      display: flex;
+    }
+    .nav-links li {
+      margin: 10px 0;
     }
   
     .menu-trigger {
       margin-left: auto;
       margin-right: auto;
+      display: block;
+    }
+    .menu-trigger.active .hamburger-line:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .menu-trigger.active .hamburger-line:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-trigger.active .hamburger-line:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
     }
   
     /* About Section */
