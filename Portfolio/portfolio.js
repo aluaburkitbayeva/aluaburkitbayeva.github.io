@@ -142,15 +142,16 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   const menuTrigger = document.querySelector('.menu-trigger');
   const navLinks = document.querySelector('.nav-links');
-  const closeMenu = document.querySelector('.close-menu');
 
   menuTrigger.addEventListener('click', function() {
     navLinks.classList.toggle('active');
-    closeMenu.style.display = navLinks.classList.contains('active') ? 'block' : 'none';
   });
 
-  closeMenu.addEventListener('click', function() {
-    navLinks.classList.remove('active');
-    closeMenu.style.display = 'none';
+  // Close menu when a link is clicked
+  const navItems = document.querySelectorAll('.nav-links a');
+  navItems.forEach(item => {
+    item.addEventListener('click', function() {
+      navLinks.classList.remove('active');
+    });
   });
 });
