@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   menuTrigger.addEventListener('click', function() {
     navLinks.classList.toggle('active');
-    this.classList.toggle('active');
+    menuTrigger.classList.toggle('active');
   });
 
   // Close menu when a link is clicked
