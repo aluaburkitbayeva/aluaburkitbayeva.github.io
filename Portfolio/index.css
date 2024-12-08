@@ -739,6 +739,7 @@ html {
   }
   .photo-container {
     margin-bottom: 20px;
+    margin: 0;
   }
   .text {
     padding: 0 15px; /* Add some horizontal padding */
