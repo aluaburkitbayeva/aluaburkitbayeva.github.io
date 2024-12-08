@@ -765,6 +765,9 @@ html {
     .project-detail:nth-child(even) .project-container {
       flex-direction: column;
     }
+    .project-detail.reverse .project-container {
+      flex-direction: column;
+    }
 }
 .skills-container-wrapper {
   position: relative;
