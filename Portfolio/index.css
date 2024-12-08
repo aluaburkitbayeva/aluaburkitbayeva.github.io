@@ -739,7 +739,9 @@ html {
       text-align: center;
       gap: 0px;
     }
-    
+    .photo-container {
+      margin-bottom: 20px;
+    }
     h1, h2, h3, p {
       font-size: smaller; /* Reduce font size on smaller screens */
     }
