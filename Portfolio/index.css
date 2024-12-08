@@ -739,6 +739,15 @@ html {
       text-align: center;
       gap: 0px;
     }
+    .project-detail {
+      font-family: 'Arial', sans-serif !important;
+    }
+  
+    .project-detail h3,
+    .project-detail p,
+    .project-detail a {
+      font-family: inherit;
+    }
     .photo-container {
       margin-bottom: 20px;
     }
