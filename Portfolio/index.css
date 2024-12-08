@@ -737,6 +737,7 @@ html {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      gap: 10px;
     }
     h1, h2, h3, p {
       font-size: smaller; /* Reduce font size on smaller screens */
@@ -786,6 +787,15 @@ html {
       opacity: 1;
       transform: none;
       visibility: visible;
+
+  .text {
+    padding: 0 15px; /* Add some horizontal padding */
+    text-align: center; /* Center the text on mobile */
+  }
+
+  .left-text, .right-text {
+    text-align: center; /* Ensure both text blocks are centered */
+  }
     }  
     .project-text {
       order: 1;
