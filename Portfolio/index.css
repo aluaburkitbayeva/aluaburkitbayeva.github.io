@@ -1059,3 +1059,18 @@ img {
        url('/fonts/CustomFont.woff') format('woff');
   font-display: swap;
 }
+.project-detail:nth-child(1) {
+  font-family: 'Comic Sans MS', cursive !important;
+}
+
+.project-detail:nth-child(2) {
+  font-family: 'Courier New', monospace !important;
+}
+
+.project-detail:nth-child(3) {
+  font-family: 'Nosifer', cursive !important;
+}
+
+.project-detail:nth-child(4) {
+  font-family: 'Schoolbell', cursive !important;
+}
