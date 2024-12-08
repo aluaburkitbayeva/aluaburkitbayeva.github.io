@@ -4,18 +4,24 @@
         <title>Alua Burkitbayeva. Portfolio</title>
         <link rel="stylesheet" href="index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body>
-        <nav class="circular-menu">
-            <div class="menu-button">Menu</div>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+        <header class="header">
+            <nav class="nav-menu">
+                <div class="menu-trigger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="parallax-container">
             <div class="parallax-layer bg-layer"></div>
             <div class="parallax-layer content-layer">
@@ -41,102 +47,128 @@
 
             <!-- Projects Section -->
             <section id="projects" class="projects-section">
-                <h2 class="section-heading fade-up">Brief Description of All Projects</h2>
-                <p class="section-text slide-up">Below is a summary of my most significant projects, showcasing creativity, technical skills, and dedication. 
-                    Each project highlights my journey as a developer and designer, reflecting my passion for innovation and problem-solving.
-                </p>
+                <h2 class="section-heading fade-up">Skills & Tools</h2>
+                
+                <div class="skills-container-wrapper">
+                  <button class="arrow left-arrow" aria-label="Previous slide">&lt;</button>
+                  <div class="skills-container">
+                    <div class="slide">
+                      <div class="skills-grid">
+                        <div class="skill-item">
+                          <i class="fas fa-camera"></i>
+                          <p>Filming on DSLR camera</p>
+                        </div>
+                        <div class="skill-item">
+                          <i class="fas fa-paint-brush"></i>
+                          <p>Adobe Creative Suite</p>
+                        </div>
+                        <div class="skill-item">
+                          <i class="fas fa-headphones"></i>
+                          <p>Audio editing with Audacity</p>
+                        </div>
+                        <div class="skill-item">
+                          <i class="fas fa-code"></i>
+                          <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                          <i class="fas fa-comments"></i>
+                          <p>Strong communication skills</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slide">
+                      <div class="cv-slide">
+                        <h3>View My Full CV</h3>
+                        <p>Download my complete CV to learn more about my experience and qualifications</p>
+                        <a href="CV. Alua Burkitbayeva.pdf" target="_blank" class="cv-button">
+                          <i class="fas fa-file-alt"></i>
+                          Download CV
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="arrow right-arrow" aria-label="Next slide">&gt;</button>
+                </div>
+
+                <section class="project-detail" style="--item-number: 1;">
+                    <div class="project-container">
+                        <div class="project-text">
+                            <h3 class="project-heading">Who Is Your Antistress?</h3>
+                            <p class="project-description">A short film exploring the unique ways students cope with academic stress, featuring interviews with diverse students sharing their personal stress-relief methods.</p>
+                            <a href="https://aluaburkitbayeva.github.io/Alua HTML website/index.html" target="_blank" class="learn-more-btn">Learn More</a>
+                        </div>
+                        <div class="project-image">
+                            <img src="antistress.JPG" alt="Skills Gained from Who Is Your Antistress?" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-detail reverse" style="--item-number: 2;">
+                    <div class="project-container">
+                        <div class="project-text">
+                            <h3 class="project-heading">Chatney: First AI Student</h3>
+                            <p class="project-description">A sci-fi short film about the first AI student at NU, exploring themes of artificial intelligence, education, and human-AI interaction through creative storytelling.</p>
+                            <a href="https://khaleeks.github.io/comicAssign/index.html" target="_blank" class="learn-more-btn">Learn More</a>
+                        </div>
+                        <div class="project-image">
+                            <img src="chatney.JPG" alt="Skills Gained from Chatney" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-detail" style="--item-number: 3;">
+                    <div class="project-container">
+                        <div class="project-text">
+                            <h3 class="project-heading">The Final Print</h3>
+                            <p class="project-description">"The Final Print" is a sci-fi horror audio story following two college students whose printing task goes awry when the machine comes to life, using its narrative and dialogue to highlight environmental concerns.</p>
+                            <a href="https://srotosshini.github.io/SoundAssignment.github.io/" target="_blank" class="learn-more-btn">Learn More</a>
+                        </div>
+                        <div class="project-image">
+                            <img src="printer.JPG" alt="Skills Gained from The Final Print" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-detail reverse" style="--item-number: 4;">
+                    <div class="project-container">
+                        <div class="project-text">
+                            <h3 class="project-heading">How To Pretend To Be A Responsible Student</h3>
+                            <p class="project-description">A humorous video guide offering a satirical look at student life, blending comedy with relatable scenarios to showcase the daily challenges and creative solutions of college students.</p>
+                            <a href="https://haririsha.github.io/VideoProject/index.html" target="_blank" class="learn-more-btn">Learn More</a>
+                        </div>
+                        <div class="project-image">
+                            <img src="video.JPG" alt="Skills Gained from How To Pretend To Be A Responsible Student" />
+                        </div>
+                    </div>
+                </section>
             </section>
-            <!-- Individual Project Section -->
-<section class="project-detail">
-    <div class="project-container">
-        <!-- Left Side: Heading, Description, Button -->
-        <div class="project-text">
-            <h3 class="project-heading">Who Is Your Antistress?</h3>
-            <p class="project-description">This stress-relief website highlights animals like dogs, horses, hamsters, and NYUAD campus cats, showing how they help reduce stress.</p>
-            <a href="https://aluaburkitbayeva.github.io/Alua%20HTML%20website/index.html" target="_blank" class="learn-more-btn">Learn More</a>
-        </div>
 
-         <!-- Skills Gained Image -->
-         <div class="skills-image">
-            <img src="antistress.JPG" alt="Skills Gained from Who Is Your Antistress?" />
-        </div>
-    </div>
-</section>
-            <!-- Another Individual Project Section -->
-<section class="project-detail reverse">
-    <div class="project-container">
-        <!-- Right Side: Heading, Description, Button -->
-        <div class="project-text">
-            <h3 class="project-heading">Chatney: First AI Student</h3>
-            <p class="project-description">This interactive web comic follows Chatney, NYU Abu Dhabi's first AI-student, exploring themes of kindness, exploitation, and human-AI relationships through immersive visuals and dynamic storytelling.</p>
-            <a href="https://khaleeks.github.io/comicAssign/index.html" target="_blank" class="learn-more-btn">Learn More</a>
-        </div>
-
-         <!-- Skills Gained Image -->
-         <div class="skills-image">
-            <img src="chatney.JPG" alt="Skills Gained from Who Is Your Antistress?" />
-        </div>
-    </div>
-</section>
-
-<!-- Repeat the structure for other projects -->
-<section class="project-detail">
-    <div class="project-container">
-        <!-- Left Side: Heading, Description, Button -->
-        <div class="project-text">
-            <h3 class="project-heading">The Final Print</h3>
-            <p class="project-description">"The Final Print" is a sci-fi horror audio story following two college students whose printing task goes awry when the machine comes to life, using its narrative and dialogue to highlight environmental concerns.</p>
-            <a href="https://srotosshini.github.io/SoundAssignment.github.io/" target="_blank" class="learn-more-btn">Learn More</a>
-        </div>
-
-         <!-- Skills Gained Image -->
-         <div class="skills-image">
-            <img src="printer.JPG" alt="Skills Gained from Who Is Your Antistress?" />
-        </div>
-    </div>
-</section>
-
-<section class="project-detail reverse">
-    <div class="project-container">
-        <!-- Right Side: Heading, Description, Button -->
-        <div class="project-text">
-            <h3 class="project-heading">How To Pretend To Be A Responsible Student</h3>
-            <p class="project-description">This satirical short video humorously guides students on faking a put-together life while navigating the chaos of academic survival, inspired by the relatable struggles of NYU Abu Dhabi students.</p>
-            <a href="https://haririsha.github.io/VideoProject/index.html" target="_blank" class="learn-more-btn">Learn More</a>
-        </div>
-
-         <!-- Skills Gained Image -->
-         <div class="skills-image">
-            <img src="video.JPG" alt="Skills Gained from Who Is Your Antistress?" />
-        </div>
-    </div>
-</section>
-<!-- Contact Me Section -->
-<section id="contact" class="contact-section">
-    <div class="contact-container">
-        <h2 class="contact-heading">Contact Me</h2>
-        <p class="contact-description">Feel free to reach out if you have any questions, opportunities, or just want to connect!</p>
-        
-        <!-- Social Media Buttons -->
-        <div class="social-media-links">
-            <a href="https://www.linkedin.com" target="_blank" class="social-button linkedin">
-                <i class="fab fa-linkedin-in"></i> LinkedIn
-            </a>
-            <a href="https://www.github.com" target="_blank" class="social-button github">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61561368939907" target="_blank" class="social-button email">
-                <i class="fas fa-envelope"></i> Facebook
-            </a>
-        </div>
-        
-        <p class="contact-info">Or reach me directly at <a href="mailto:ab11177@nyu.edu">Gmail</a></p>
-    </div>
-</section>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Courier+New&family=Nosifer&family=Schoolbell&display=swap" rel="stylesheet">
-
+            <!-- Contact Me Section -->
+            <section id="contact" class="contact-section">
+                <div class="contact-container">
+                    <h2 class="contact-heading">Contact Me</h2>
+                    <p class="contact-description">Feel free to reach out if you have any questions, opportunities, or just want to connect!</p>
+                    
+                    <!-- Social Media Buttons -->
+                    <div class="social-media-links">
+                        <a href="linkedin.com/in/alua-burkitbayeva-617060330" target="_blank" class="social-button linkedin">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/aluaburkitbayeva/aluaburkitbayeva.github.io" target="_blank" class="social-button github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61561368939907" target="_blank" class="social-button email">
+                            <i class="fas fa-envelope"></i> Facebook
+                        </a>
+                    </div>
+                    
+                    <p class="contact-info">Or reach me directly at <a href="mailto:ab11177@nyu.edu">Gmail</a></p>
+                </div>
+            </section>
         </main>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Courier+New&family=Nosifer&family=Schoolbell&display=swap" rel="stylesheet">
         <script src="portfolio.js"></script>
     </body>
-</html> 
+</html>

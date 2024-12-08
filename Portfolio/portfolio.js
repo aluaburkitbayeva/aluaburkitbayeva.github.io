@@ -1,4 +1,3 @@
-
 const projectSections = document.querySelectorAll('.project-detail');
 const body = document.body;
 
@@ -72,3 +71,53 @@ function resetTheme(projectElement) {
 }
 
 projectSections.forEach(section => observer.observe(section));
+
+// Skills navigation
+const skillsContainer = document.querySelector('.skills-container');
+const slides = document.querySelectorAll('.slide:not(.clone)');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+
+let currentIndex = 0;
+const totalSlides = slides.length;
+
+function updateSlidePosition() {
+  skillsContainer.style.transform = `translateX(${-currentIndex * 33.333}%)`;
+}
+
+function moveToNextSlide() {
+  currentIndex++;
+  updateSlidePosition();
+  if (currentIndex === totalSlides) {
+    setTimeout(() => {
+      skillsContainer.style.transition = 'none';
+      currentIndex = 0;
+      updateSlidePosition();
+      setTimeout(() => {
+        skillsContainer.style.transition = 'transform 0.3s ease-in-out';
+      }, 10);
+    }, 300);
+  }
+}
+
+function moveToPrevSlide() {
+  if (currentIndex === 0) {
+    skillsContainer.style.transition = 'none';
+    currentIndex = totalSlides;
+    updateSlidePosition();
+    setTimeout(() => {
+      skillsContainer.style.transition = 'transform 0.3s ease-in-out';
+      currentIndex--;
+      updateSlidePosition();
+    }, 10);
+  } else {
+    currentIndex--;
+    updateSlidePosition();
+  }
+}
+
+rightArrow.addEventListener('click', moveToNextSlide);
+leftArrow.addEventListener('click', moveToPrevSlide);
+
+// Initialize the first slide
+updateSlidePosition();
