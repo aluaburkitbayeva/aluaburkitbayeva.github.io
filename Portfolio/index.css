@@ -807,7 +807,7 @@ html {
       visibility: visible;
 
   .text {
-    padding: 0 15px; /* Add some horizontal padding */
+    padding: 5px; /* Add some horizontal padding */
     text-align: center; /* Center the text on mobile */
   }
 
