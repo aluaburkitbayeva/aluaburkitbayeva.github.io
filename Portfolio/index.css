@@ -235,7 +235,9 @@ main {
     animation: slide-in-right 0.5s ease-out forwards;
     transform: translateX(100%);
 }
-
+.project-detail:not(:last-child) {
+  margin-bottom: 40px;
+}
 .project-detail:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -306,6 +308,7 @@ main {
     margin-bottom: 20px;
     line-height: 1.6;
     font-size: 20px; /* Increased font size */
+    line-height: 1.6;
 }
 
 /* Project Image */
@@ -389,6 +392,7 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .project-container {
@@ -705,28 +709,35 @@ html {
       font-size: smaller; /* Reduce font size on smaller screens */
     }
     .project-text {
-        text-align: center;
+      order: 1;
+      width: 100%;
     }
 
     .project-heading {
-      order: 1;
+      font-size: 24px;
+      margin-bottom: 10px;
     }
   
     .project-description {
-      order: 4;
-      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
     }
   
     .skills-image {
-      flex: 1;
-  max-width: 300px;
-    }
-  
-    .learn-more-btn {
-      order: 3;
+      order: 2;
       width: 100%;
-      text-align: center;
       margin-top: 20px;
+    }
+  .skills-image img {
+    max-width: 100%;
+    height: auto;
+  }
+    .learn-more-btn {
+      display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
     }
 }
 .skills-container-wrapper {
