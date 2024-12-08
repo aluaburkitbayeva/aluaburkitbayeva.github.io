@@ -8,6 +8,7 @@ body {
     background: linear-gradient(135deg, #d1acdf, #a1a9a9);
     font-family: 'Poppins', sans-serif;
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1280 - 320)));
+    
   }
   
 main {
@@ -761,6 +762,8 @@ html {
       order: 4;
     width: 100%;
     margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
     }
     .project-detail:nth-child(even) .project-container {
       flex-direction: column;
@@ -768,6 +771,13 @@ html {
     .project-detail.reverse .project-container {
       flex-direction: column;
     }
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .skill-item {
+      width: 100%;
+      max-width: none;
+    }  
 }
 .skills-container-wrapper {
   position: relative;
