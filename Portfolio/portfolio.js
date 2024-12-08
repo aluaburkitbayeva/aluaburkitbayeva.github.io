@@ -145,15 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   menuTrigger.addEventListener('click', function() {
     navLinks.classList.toggle('active');
-    menuTrigger.classList.toggle('active');
-  });
-
-  // Close menu when a link is clicked
-  const navItems = document.querySelectorAll('.nav-links a');
-  navItems.forEach(item => {
-    item.addEventListener('click', function() {
-      navLinks.classList.remove('active');
-      menuTrigger.classList.remove('active');
-    });
+    console.log('Menu clicked');
   });
 });
