@@ -7,6 +7,7 @@
 body {
     background: linear-gradient(135deg, #d1acdf, #a1a9a9);
     font-family: 'Poppins', sans-serif;
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1280 - 320)));
   }
   
 main {
@@ -266,6 +267,8 @@ main {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
+  padding: 14px; /* Larger padding for easier tapping */
+  
 }
 .learn-more-btn:before {
   content: '';
@@ -594,6 +597,78 @@ main {
     .social-media-links {
         flex-direction: column;
     }
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  
+    .menu-trigger {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /* About Section */
+    .content-container {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+    }
+  
+    .photo-container img {
+      width: 200px; /* Smaller image size */
+      height: 200px;
+    }
+  
+    /* Projects Section */
+    .project-container {
+      flex-direction: column; /* Stack project text and image vertically */
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .project-image img {
+      width: 90%; /* Scale images to fit smaller screens */
+      height: auto;
+    }
+  
+    .learn-more-btn {
+      width: auto; /* Allow buttons to scale naturally */
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    /* Skills Section */
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr); /* Reduce columns for smaller screens */
+      gap: 15px;
+    }
+  
+    .skill-item {
+      max-width: none; /* Allow items to scale naturally */
+      width: auto;
+    }
+  
+    .arrow {
+      width: 40px; /* Smaller arrows */
+      height: 40px;
+      font-size: 1.5em;
+    }
+  
+    /* Contact Section */
+    .contact-container {
+      padding-top: 30px; /* Adjust spacing for smaller screens */
+      text-align: center;
+    }
+  
+    .social-media-links {
+      flex-direction: column; /* Stack social media buttons vertically */
+      gap: 15px;
+    }  
 }
 
 /* Fade-up and Slide-up Animations */
@@ -626,7 +701,9 @@ html {
       flex-direction: column;
       align-items: center;
     }
-
+    h1, h2, h3, p {
+      font-size: smaller; /* Reduce font size on smaller screens */
+    }
     .project-text {
         text-align: center;
     }
@@ -803,6 +880,7 @@ html {
     border-radius: 20px;
     font-size: 0.9em;
     transition: transform 0.3s ease;
+    padding: 12px; /* Adjust button sizes for mobile */
 }
 
 .cv-button:hover {
@@ -848,4 +926,8 @@ html {
 } 
 .contact-container {
   padding-top: 40px; /* Adjust this value as needed */
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
