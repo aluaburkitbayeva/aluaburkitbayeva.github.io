@@ -740,6 +740,7 @@ html {
   .photo-container {
     margin: 0;
     flex: 0 0 auto;
+    margin-bottom: 10px;
   }
   .text {
     padding: 0 10px; /* Add some horizontal padding */
