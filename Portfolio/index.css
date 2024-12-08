@@ -748,7 +748,7 @@ html {
   }
   .left-text, .right-text {
     text-align: center; /* Ensure both text blocks are centered */
-    margin-top: 20px;
+    margin-top: 10px;
   }
     .project-container {
       display: flex;
