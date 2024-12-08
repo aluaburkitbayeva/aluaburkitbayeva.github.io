@@ -765,19 +765,12 @@ html {
     padding: 12px 24px;
     font-size: 16px;
     }
-    .project-detail:nth-child(even) .project-container {
-      flex-direction: column;
-    }
-    .project-detail.reverse .project-container {
-      flex-direction: column;
-    }
-    .skills-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .skill-item {
-      width: 100%;
-      max-width: none;
-    }  
+     /* Override any existing styles for odd/even projects */
+  .project-detail:nth-child(odd) .project-container,
+  .project-detail:nth-child(even) .project-container,
+  .project-detail.reverse .project-container {
+    flex-direction: column;
+  }
 }
 .skills-container-wrapper {
   position: relative;
