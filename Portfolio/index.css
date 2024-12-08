@@ -1044,18 +1044,3 @@ img {
   font-weight: normal;
   font-style: normal;
 }
-.project-detail:nth-child(1) {
-  font-family: 'Comic Sans MS', cursive;
-}
-
-.project-detail:nth-child(2) {
-  font-family: 'Courier New', monospace;
-}
-
-.project-detail:nth-child(3) {
-  font-family: 'Nosifer', cursive;
-}
-
-.project-detail:nth-child(4) {
-  font-family: 'Schoolbell', cursive;
-}
