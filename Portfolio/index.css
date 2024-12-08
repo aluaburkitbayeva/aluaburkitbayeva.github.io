@@ -732,6 +732,9 @@ html {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+  .about-section {
+    padding-top: 100px;
+  }
   .content-container {
     flex-direction: column;
     align-items: center;
