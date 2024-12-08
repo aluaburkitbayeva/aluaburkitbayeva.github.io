@@ -447,7 +447,15 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-
+.close-menu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+}
 /* Left Side: Project Text */
 .project-text {
   flex: 1;
@@ -764,6 +772,9 @@ html {
     margin-top: 20px;
     padding: 12px 24px;
     font-size: 16px;
+    }
+    .nav-links.active + .close-menu {
+      display: block;
     }
      /* Override any existing styles for odd/even projects */
   .project-detail:nth-child(odd) .project-container,
