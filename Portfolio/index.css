@@ -739,6 +739,14 @@ html {
       text-align: center;
       gap: 0px;
     }
+    .text {
+      padding: 5px; /* Add some horizontal padding */
+      text-align: center; /* Center the text on mobile */
+    }
+  
+    .left-text, .right-text {
+      text-align: center; /* Ensure both text blocks are centered */
+    }
     .project-detail {
       font-family: 'Arial', sans-serif !important;
     }
@@ -799,15 +807,8 @@ html {
       opacity: 1;
       transform: none;
       visibility: visible;
+    
 
-  .text {
-    padding: 5px; /* Add some horizontal padding */
-    text-align: center; /* Center the text on mobile */
-  }
-
-  .left-text, .right-text {
-    text-align: center; /* Ensure both text blocks are centered */
-  }
     }  
     .project-text {
       order: 1;
