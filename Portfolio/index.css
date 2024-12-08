@@ -739,21 +739,6 @@ html {
       text-align: center;
       gap: 0px;
     }
-    .project-detail:nth-child(1) {
-      font-family: 'Comic Sans MS', !important;
-    }
-    
-    .project-detail:nth-child(2) {
-      font-family: 'Courier New', monospace !important;
-    }
-    
-    .project-detail:nth-child(3) {
-      font-family: 'Nosifer',  !important;
-    }
-    
-    .project-detail:nth-child(4) {
-      font-family: 'Schoolbell',  !important;
-    }
     .photo-container {
       margin-bottom: 20px;
     }
