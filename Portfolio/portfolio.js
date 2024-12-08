@@ -139,12 +139,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-document.addEventListener('DOMContentLoaded', function() {
-  const menuTrigger = document.querySelector('.menu-trigger');
-  const navLinks = document.querySelector('.nav-links');
-
-  menuTrigger.addEventListener('click', function() {
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-    menuTrigger.classList.toggle('active');
-  });
-});
