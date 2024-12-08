@@ -145,6 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   menuTrigger.addEventListener('click', function() {
     navLinks.classList.toggle('active');
+    this.classList.toggle('active');
   });
 
   // Close menu when a link is clicked
@@ -152,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
   navItems.forEach(item => {
     item.addEventListener('click', function() {
       navLinks.classList.remove('active');
+      menuTrigger.classList.remove('active');
     });
   });
 });
