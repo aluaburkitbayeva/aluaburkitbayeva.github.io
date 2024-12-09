@@ -759,6 +759,9 @@ html {
     text-align: center; /* Ensure both text blocks are centered */
     margin-top: 10px;
   }
+    .section-text {
+      margin-bottom: -20px; /* Adjust this value as needed to move the text higher */
+    }
     .project-container {
       display: flex;
       flex-direction: column;
