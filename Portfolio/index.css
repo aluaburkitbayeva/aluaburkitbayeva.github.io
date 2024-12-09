@@ -735,6 +735,9 @@ html {
   .about-section {
     padding-top: 100px;
   }
+    .skills-section .section-text {
+      margin-bottom: -20px; /* Adjust this value as needed */
+    }
   .content-container {
     flex-direction: column;
     align-items: center;
