@@ -738,13 +738,20 @@ html {
     .skills-section .section-text {
       margin-bottom: -20px; /* Adjust this value as needed */
     }
+    .cv-slide {
+      margin-top: -50px;
+    }
+  
     .cv-slide h3 {
-      margin-top: -10px; /* Adjust this value to move it higher */
+      margin-top: 0;
+      margin-bottom: 5px;
     }
   
     .cv-slide p {
-      margin-top: -5px; /* Adjust this value to move it higher */
+      margin-top: 0;
+      margin-bottom: 10px;
     }
+  
   .content-container {
     flex-direction: column;
     align-items: center;
