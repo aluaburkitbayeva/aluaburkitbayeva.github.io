@@ -751,6 +751,10 @@ html {
       margin-top: 0;
       margin-bottom: 10px;
     }
+    .cv-button {
+      margin-top: auto;
+      margin-bottom: 20px;
+    }
   
   .content-container {
     flex-direction: column;
