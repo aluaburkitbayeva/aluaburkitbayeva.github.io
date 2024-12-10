@@ -1093,7 +1093,7 @@ img {
 }
 @font-face {
   font-family: 'Nosifer';
-  src: url('../fonts/Nosifer-Regular.woff2') format('woff2');
+  src: url('fonts/Nosifer/') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
