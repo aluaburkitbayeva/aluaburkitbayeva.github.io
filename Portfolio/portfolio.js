@@ -156,10 +156,9 @@ document.addEventListener('DOMContentLoaded', function() {
             entry.target.style.fontFamily = "'Nosifer', cursive";
             fontFamily = "'Creepster', cursive";  // Google Font alternative
             break;
-          case 'How To Pretend To Be A Responsible Student':
-            entry.target.style.fontFamily = "'Schoolbell', cursive";
-            fontFamily = "'Indie Flower', cursive";
-            break;
+            case 'How To Pretend To Be A Responsible Student':
+              fontFamily = "'Schoolbell', 'Comic Sans MS', cursive";
+              break;
         }
       }
     });
