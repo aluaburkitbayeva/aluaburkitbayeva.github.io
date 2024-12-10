@@ -1093,7 +1093,8 @@ img {
 }
 @font-face {
   font-family: 'Nosifer';
-  src: url('fonts/Nosifer/') format('woff2');
+  src: url('fonts/Nosifer/Nosifer-Regular.woff2') format('woff2'),
+       url('fonts/Nosifer/Nosifer-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1101,7 +1102,8 @@ img {
 
 @font-face {
   font-family: 'Schoolbell';
-  src: url('fonts/Schoolbell/') format('woff2');
+  src: url('fonts/Schoolbell/Schoolbell-Regular.woff2') format('woff2'),
+       url('fonts/Schoolbell/Schoolbell-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1109,7 +1111,8 @@ img {
 
 @font-face {
   font-family: 'Comic Sans MS';
-  src: url('fonts/OnlineWebFonts_COM_27f32bd37c39ed2d78d16b7e294a2d3a/') format('woff2');
+  src: url('fonts/OnlineWebFonts_COM_27f32bd37c39ed2d78d16b7e294a2d3a/ComicSansMS.woff2') format('woff2'),
+       url('fonts/OnlineWebFonts_COM_27f32bd37c39ed2d78d16b7e294a2d3a/ComicSansMS.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1117,7 +1120,8 @@ img {
 
 @font-face {
   font-family: 'Courier New';
-  src: url('fonts/OnlineWebFonts_COM_5aefba3ed5c8c3b737ebe1f93e048854/') format('woff2');
+  src: url('fonts/OnlineWebFonts_COM_5aefba3ed5c8c3b737ebe1f93e048854/CourierNew.woff2') format('woff2'),
+       url('fonts/OnlineWebFonts_COM_5aefba3ed5c8c3b737ebe1f93e048854/CourierNew.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
