@@ -1101,7 +1101,7 @@ img {
 
 @font-face {
   font-family: 'Schoolbell';
-  src: url('../fonts/Schoolbell-Regular.woff2') format('woff2');
+  src: url('fonts/Schoolbell/') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
