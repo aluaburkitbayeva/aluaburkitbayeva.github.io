@@ -154,9 +154,11 @@ document.addEventListener('DOMContentLoaded', function() {
             break;
           case 'The Final Print':
             entry.target.style.fontFamily = "'Nosifer', cursive";
+            fontFamily = "'Creepster', cursive";  // Google Font alternative
             break;
           case 'How To Pretend To Be A Responsible Student':
             entry.target.style.fontFamily = "'Schoolbell', cursive";
+            fontFamily = "'Indie Flower', cursive";
             break;
         }
       }
