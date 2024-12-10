@@ -739,11 +739,11 @@ html {
       margin-bottom: -20px; /* Adjust this value as needed */
     }
     .cv-slide h3 {
-      margin-top: -20px; /* Adjust this value to move it higher */
+      margin-top: -10px; /* Adjust this value to move it higher */
     }
   
     .cv-slide p {
-      margin-top: -10px; /* Adjust this value to move it higher */
+      margin-top: -5px; /* Adjust this value to move it higher */
     }
   .content-container {
     flex-direction: column;
